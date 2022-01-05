@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name = "flipkart">
+	<listeners>
+		<listener class-name="com.flipkart.utilities.Reporting"/>
+	</listeners>
+	<test name = "HomePageTestExecution">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.flipkart.testCases.HomePageTests"/>
+		</classes>
+	</test>
+
+	<!--  <test name = "HomePageTestExecution">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="com.flipkart.testCases.HomePageTests"/>
+		</classes>
+	</test> -->
+
+		
+</suite>
